@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="14dp"
+    android:background="@drawable/bg_spinner_dropdown_item"
+    android:minHeight="52dp">
+
+    <!-- Dot indicator (hidden for hint, shown for real items) -->
+    <View
+        android:id="@+id/vDot"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_dot_indicator" />
+
+    <TextView
+        android:id="@+id/tvDropdownText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:fontFamily="sans-serif"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <ImageView
+        android:id="@+id/ivCheckMark"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_check"
+        android:visibility="gone"
+        android:contentDescription="@null" />
+
+</LinearLayout>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1A3C8F</color>
+    <color name="colorPrimaryDark">#142D6B</color>
+    <color name="colorAccent">#2952C8</color>
+    <color name="colorBackground">#F4F6FB</color>
+    <color name="colorCardBg">#FFFFFF</color>
+    <color name="colorBlueBanner">#1A3C8F</color>
+    <color name="colorBlueBannerLight">#2952C8</color>
+    <color name="colorTextPrimary">#1A1A2E</color>
+    <color name="colorTextSecondary">#6B7280</color>
+    <color name="colorPending">#F59E0B</color>
+    <color name="colorPendingBg">#FEF3C7</color>
+    <color name="colorApproved">#10B981</color>
+    <color name="colorApprovedBg">#D1FAE5</color>
+    <color name="colorRejected">#EF4444</color>
+    <color name="colorRejectedBg">#FEE2E2</color>
+    <color name="colorDivider">#E5E7EB</color>
+    <color name="colorFab">#1A3C8F</color>
+    <color name="colorTagBg">#3B60D4</color>
+    <color name="colorIconBlueBg">#EEF2FF</color>
+</resources>

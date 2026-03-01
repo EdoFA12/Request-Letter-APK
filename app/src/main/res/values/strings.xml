@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Request Letter</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="greeting_name">Halo, Edo FA!</string>
+    <string name="greeting_subtitle">Welcome back to your student UNUJA.</string>
+    <string name="this_semester">Semester Ujung</string>
+    <string name="total_pengajuan">Total Pengajuan</string>
+    <string name="total_count">3</string>
+    <string name="documents">Documents</string>
+    <string name="riwayat_pengajuan">Riwayat Pengajuan</string>
+    <string name="see_all">Lihat Semua</string>
+
+    <!-- Status badges -->
+    <string name="status_pending">⏳ Pending</string>
+    <string name="status_approved">✓ Approved</string>
+    <string name="status_rejected">✕ Rejected</string>
+
+    <!-- Item 1 -->
+    <string name="surat_pengantar_pkl">Surat Pengantar PKL</string>
+    <string name="pkl_company">PT. Teknologi Nusantara</string>
+    <string name="date_pkl">  12 Oct 2023</string>
+    <string name="id_pkl">ID: #REQ-2023-003</string>
+
+    <!-- Item 2 -->
+    <string name="surat_ket_aktif">Surat Keterangan Aktif</string>
+    <string name="ket_aktif_purpose">Keperluan Beasiswa</string>
+    <string name="date_ket_aktif">  05 Oct 2023</string>
+    <string name="download_pdf">Download PDF</string>
+
+    <!-- Item 3 -->
+    <string name="transkrip_nilai">Transkrip Nilai</string>
+    <string name="transkrip_purpose">Legalisir Dokumen</string>
+    <string name="date_transkrip">  28 Sep 2023</string>
+    <string name="check_reason">Check Reason</string>
+
+    <!-- Item 4 -->
+    <string name="surat_bebas_pustaka">Surat Bebas Pustaka</string>
+    <string name="pustaka_purpose">Persyaratan Wisuda</string>
+    <string name="date_pustaka">  15 Sep 2023</string>
+
+    <!-- New Request Form -->
+    <string name="new_request">Pengajuan Baru</string>
+    <string name="student_details">Data Mahasiswa</string>
+    <string name="nim_label">NIM (Nomor Induk Mahasiswa)</string>
+    <string name="nim_hint">cth. 2023001</string>
+    <string name="full_name_label">Nama Lengkap</string>
+    <string name="full_name_hint">Masukkan nama lengkap Anda</string>
+    <string name="request_information">Informasi Pengajuan</string>
+    <string name="category_label">Kategori</string>
+    <string name="category_hint">Pilih kategori</string>
+    <string name="start_date_label">Tanggal Mulai</string>
+    <string name="end_date_label">Tanggal Selesai</string>
+    <string name="target_institution_label">Instansi Tujuan</string>
+    <string name="target_institution_hint">cth. PT. Teknologi Indonesia, Jakarta</string>
+    <string name="target_institution_note">Harap cantumkan nama resmi lengkap dan kota.</string>
+    <string name="generate_document">Buat Dokumen</string>
+    <string name="date_hint">hh/bb/tttt</string>
+    <string name="status_label">Status</string>
+    <string name="status_hint">Pilih status</string>
+</resources>

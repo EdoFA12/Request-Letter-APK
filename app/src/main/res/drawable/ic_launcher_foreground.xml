@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Lingkaran dekoratif kanan atas -->
+    <path
+        android:fillColor="#1AFFFFFF"
+        android:pathData="M90,0 A30,30 0,0,1 108,18 A30,30 0,0,1 90,0 Z" />
+
+    <!-- Lingkaran dekoratif kiri bawah -->
+    <path
+        android:fillColor="#1AFFFFFF"
+        android:pathData="M0,90 A30,30 0,0,0 18,108 A30,30 0,0,0 0,90 Z" />
+
+    <!-- Glassmorphism box putih semi-transparan (background icon) -->
+    <path
+        android:fillColor="#33FFFFFF"
+        android:pathData="M30,22 L78,22 Q86,22 86,30 L86,30 L86,78 Q86,86 78,86 L30,86 Q22,86 22,78 L22,30 Q22,22 30,22 Z" />
+
+    <!-- Dokumen body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,32 L58,32 Q60,32 60,34 L60,34 L66,40 L66,76 Q66,78 64,78 L44,78 Q42,78 42,76 Z" />
+
+    <!-- Lipatan pojok dokumen -->
+    <path
+        android:fillColor="#AACBFF"
+        android:pathData="M60,32 L66,38 L60,38 Z" />
+
+    <!-- Garis teks baris 1 -->
+    <path
+        android:fillColor="#1A3C8F"
+        android:strokeColor="#1A3C8F"
+        android:strokeWidth="2"
+        android:pathData="M47,48 L61,48" />
+
+    <!-- Garis teks baris 2 -->
+    <path
+        android:fillColor="#1A3C8F"
+        android:strokeColor="#1A3C8F"
+        android:strokeWidth="2"
+        android:pathData="M47,55 L61,55" />
+
+    <!-- Garis teks baris 3 -->
+    <path
+        android:fillColor="#1A3C8F"
+        android:strokeColor="#1A3C8F"
+        android:strokeWidth="2"
+        android:pathData="M47,62 L57,62" />
+
+</vector>

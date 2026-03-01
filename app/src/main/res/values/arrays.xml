@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kategori_array">
+        <item>Pilih kategori</item>
+        <item>PKL</item>
+        <item>Skripsi</item>
+        <item>KKN</item>
+    </string-array>
+
+    <string-array name="status_array">
+        <item>Pilih status</item>
+        <item>Proses</item>
+        <item>Disetujui</item>
+        <item>Tidak Disetujui</item>
+    </string-array>
+</resources>
+
