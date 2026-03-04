@@ -26,6 +26,7 @@ class RiwayatActivity : AppCompatActivity() {
     private val riwayatList = mutableListOf<PengajuanItem>()
 
     private var currentKeyword = ""
+    private var currentStatusFilter = ""
 
     // ─── Launcher: Edit ──────────────────────────────────────────────────────
 
@@ -61,6 +62,7 @@ class RiwayatActivity : AppCompatActivity() {
         db = DatabaseHelper.getInstance(this)
 
         setupSearch()
+        setupChipFilter()
         setupRecyclerView()
         loadData()
 
@@ -80,6 +82,18 @@ class RiwayatActivity : AppCompatActivity() {
         })
     }
 
+    private fun setupChipFilter() {
+        binding.chipGroupStatus.setOnCheckedStateChangeListener { _, checkedIds ->
+            currentStatusFilter = when {
+                checkedIds.contains(R.id.chipProses)         -> "Pending"
+                checkedIds.contains(R.id.chipDisetujui)      -> "Approved"
+                checkedIds.contains(R.id.chipTidakDisetujui) -> "Rejected"
+                else                                          -> ""
+            }
+            loadData()
+        }
+    }
+
     private fun setupRecyclerView() {
         adapter = PengajuanAdapter(
             items    = riwayatList,
@@ -92,8 +106,10 @@ class RiwayatActivity : AppCompatActivity() {
 
     private fun loadData() {
         val data = db.search(currentKeyword, "terbaru")
+        val filtered = if (currentStatusFilter.isBlank()) data
+                       else data.filter { it.status.equals(currentStatusFilter, ignoreCase = true) }
         riwayatList.clear()
-        riwayatList.addAll(data)
+        riwayatList.addAll(filtered)
         adapter.notifyDataSetChanged()
 
         val count = riwayatList.size

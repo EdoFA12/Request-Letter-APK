@@ -65,7 +65,7 @@ class PengajuanAdapter(
                     ContextCompat.getColor(ctx, R.color.colorRejected)
                 )
             }
-            else -> {
+            "Pending" -> {
                 b.tvItemStatus.text = "⏳ Proses"
                 b.tvItemStatus.setTextColor(ContextCompat.getColor(ctx, R.color.colorPending))
                 b.tvItemStatus.background = ContextCompat.getDrawable(ctx, R.drawable.bg_badge_pending)

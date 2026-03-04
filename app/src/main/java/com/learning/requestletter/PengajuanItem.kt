@@ -11,6 +11,6 @@ data class PengajuanItem(
     val nim: String,
     val namaLengkap: String,
     val tanggalDibuat: String,
-    val status: String = "Pending"
+    val status: String
 ) : Serializable
 

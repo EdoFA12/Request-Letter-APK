@@ -5,6 +5,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.View
 import android.view.Window
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
@@ -115,7 +116,14 @@ class MainActivityDashBoard : AppCompatActivity() {
         previewList.clear()
         previewList.addAll(allData.take(DASHBOARD_PREVIEW_COUNT))
         adapter.notifyDataSetChanged()
-        binding.rvPengajuan.scrollToPosition(0)
+        if (previewList.isEmpty()) {
+            binding.rvPengajuan.visibility = View.GONE
+            binding.layoutEmptyState.visibility = View.VISIBLE
+        } else {
+            binding.rvPengajuan.visibility = View.VISIBLE
+            binding.layoutEmptyState.visibility = View.GONE
+            binding.rvPengajuan.scrollToPosition(0)
+        }
         updateTotalCount(allData.size)
     }
 

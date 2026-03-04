@@ -9,6 +9,8 @@
     <string name="documents">Documents</string>
     <string name="riwayat_pengajuan">Riwayat Pengajuan</string>
     <string name="see_all">Lihat Semua</string>
+    <string name="empty_state_title">Belum ada pengajuan</string>
+    <string name="empty_state_subtitle">Tap tombol + untuk membuat pengajuan baru</string>
 
     <!-- Status badges -->
     <string name="status_pending">⏳ Pending</string>

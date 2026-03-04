@@ -98,6 +98,79 @@
 
         </LinearLayout>
 
+        <!-- Filter Status Chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="10dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:chipSpacingHorizontal="8dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipSemua"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Semua"
+                    android:textSize="12sp"
+                    android:checked="true"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    app:chipStrokeColor="@color/chip_stroke_selector"
+                    app:chipStrokeWidth="1dp"
+                    app:checkedIconVisible="false"
+                    android:textColor="@color/chip_text_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipProses"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Proses"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    app:chipStrokeColor="@color/chip_stroke_selector"
+                    app:chipStrokeWidth="1dp"
+                    app:checkedIconVisible="false"
+                    android:textColor="@color/chip_text_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipDisetujui"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Disetujui"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    app:chipStrokeColor="@color/chip_stroke_selector"
+                    app:chipStrokeWidth="1dp"
+                    app:checkedIconVisible="false"
+                    android:textColor="@color/chip_text_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTidakDisetujui"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:text="Tidak Disetujui"
+                    android:textSize="12sp"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    app:chipStrokeColor="@color/chip_stroke_selector"
+                    app:chipStrokeWidth="1dp"
+                    app:checkedIconVisible="false"
+                    android:textColor="@color/chip_text_selector" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
         <!-- Result count label -->
         <TextView
             android:id="@+id/tvResultCount"
